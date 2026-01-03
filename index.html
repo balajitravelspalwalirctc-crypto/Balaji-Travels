@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="बालाजी ट्रेवल्स — फ्लाइट्स, होटल्स और पैकेज बुक करें।" />
+  <title>Balaji Travels — बालाजी ट्रेवल्स</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:;base64,iVBORw0K" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 id="site-title">बाल���जी ट्रेवल्स - आपका यात्रा साथी</h1>
+
+      <div class="lang-switch" aria-hidden="false">
+        <button id="btn-hi" class="lang-btn" aria-label="Switch to Hindi">हिंदी</button>
+        <button id="btn-en" class="lang-btn" aria-label="Switch to English">English</button>
+      </div>
+
+      <button id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" class="nav-toggle">
+        ☰
+      </button>
+    </div>
+
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+      <a href="#home" id="nav-home">होम</a>
+      <a href="#search" id="nav-search">फ्लाइट सर्च</a>
+      <a href="#booking" id="nav-booking">बुकिंग</a>
+      <a href="#support" id="nav-support">सपोर्ट</a>
+      <a href="#blog" id="nav-blog">ब्लॉग</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero" role="region" aria-label="Hero">
+      <div class="hero-overlay">
+        <h2 id="hero-text">आपकी सपनों की यात्रा शुरू करें!</h2>
+        <p id="hero-desc">फ्लाइट्स, होटल्स और पैकेज बुक करें आसानी से।</p>
+      </div>
+    </section>
+
+    <section id="search" class="panel" aria-labelledby="search-title">
+      <h3 id="search-title">फ्लाइट सर्च</h3>
+      <form id="flight-form" class="form-grid" novalidate>
+        <label>
+          <span class="label-text" id="label-departure">डिपार्चर सिटी</span>
+          <input type="text" id="departure" name="departure" placeholder="डिपार्चर सिटी" required />
+        </label>
+
+        <label>
+          <span class="label-text" id="label-arrival">अराइवल सिटी</span>
+          <input type="text" id="arrival" name="arrival" placeholder="अराइवल सिटी" required />
+        </label>
+
+        <label>
+          <span class="label-text" id="label-date">तारीख</span>
+          <input type="date" id="date" name="date" required />
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="primary-btn" id="search-btn">सर्च करें</button>
+        </div>
+      </form>
+
+      <div id="results" class="results" aria-live="polite"></div>
+    </section>
+
+    <section id="booking" class="panel" aria-labelledby="booking-title">
+      <h3 id="booking-title">बुकिंग प्रोसेस</h3>
+      <p id="booking-desc">1. फ्लाइट चुनें, 2. डिटेल्स भरें, 3. पेमेंट करें।</p>
+      <button class="primary-btn" id="start-booking">बुकिंग शुरू करें</button>
+    </section>
+
+    <section id="support" class="panel" aria-labelledby="support-title">
+      <h3 id="support-title">कस्टमर सपोर्ट</h3>
+      <p id="support-desc">हमसे संपर्क करें: <a href="mailto:support@balajitravels.com">support@balajitravels.com</a> | फोन: 1800-123-456</p>
+
+      <form id="support-form" class="support-form" novalidate>
+        <label>
+          <span class="label-text">आपका नाम</span>
+          <input type="text" id="sup-name" name="name" placeholder="आपका नाम" required />
+        </label>
+
+        <label>
+          <span class="label-text">ईमेल</span>
+          <input type="email" id="sup-email" name="email" placeholder="you@example.com" required />
+        </label>
+
+        <label>
+          <span class="label-text">संदेश</span>
+          <textarea id="sup-message" name="message" rows="4" placeholder="सवाल पूछें" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="primary-btn">सबमिट</button>
+        </div>
+      </form>
+
+      <div id="support-result" aria-live="polite"></div>
+    </section>
+
+    <section id="blog" class="panel" aria-labelledby="blog-title">
+      <h3 id="blog-title">ब्लॉग</h3>
+
+      <article class="post">
+        <h4>मुंबई में 5 दिन का ट्रिप</h4>
+        <p id="blog-content">मुंबई की सड़कों पर घूमें और मजा करें।</p>
+      </article>
+
+      <div class="map" id="map-placeholder" role="region" aria-label="Map placeholder">
+        Google Maps इंटीग्रेशन (यहाँ रियल मैप आएगा)
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> बालाजी ट्रेवल्स. सभी अधिकार सुरक्षित।</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
